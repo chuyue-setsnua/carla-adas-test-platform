@@ -33,3 +33,9 @@ README
 .idea/
 *.swp
 *.swo
+
+# Personal study notes & resumes (not part of project)
+HIL架构面试速通手册.md
+车载以太网_LIN面试速通手册.md
+~$*.docx
+张依杰_简历*.docx
