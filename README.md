@@ -102,4 +102,3 @@ Open `.asc` files in Vector CANalyzer, CANoe, or python-can.
 
 ## License
 
-MIT
