@@ -42,6 +42,15 @@ python batch_test.py           # 80-test parameter sweep (headless)
 
 **Controls:** `SPACE` = start scenario, `R` = reset, `Q` = quit
 
+### Run Tests
+
+```bash
+pip install pytest
+python -m pytest test_can_simulator.py -v
+```
+
+55 tests covering: CAN ID constants, signal encoding/decoding (uint16/int16/uint8), frame construction, .asc format output, binary round-trip, boundary value clamping, and CANDatalogger file I/O. Tests run without a CARLA server and are automatically executed on every push via GitHub Actions.
+
 ### Batch Testing
 
 ```bash
@@ -75,6 +84,8 @@ Open `.asc` files in Vector CANalyzer, CANoe, or python-can.
 ├── scenario_cutin.py          # Cut-in scenario + CAN logging
 ├── scenario_pedestrian.py     # Pedestrian AEB + CAN logging
 ├── batch_test.py              # Headless parameter sweep framework
+├── test_can_simulator.py      # pytest unit tests for CAN module
+├── .github/workflows/test.yml  # CI: auto-run pytest on push
 ├── demo_drive.py              # Manual driving demo
 ├── demo_multisensor.py        # Multi-sensor demo (RGB + semantic + LiDAR)
 ├── spawn_test.py              # Vehicle spawn diagnostic tool
