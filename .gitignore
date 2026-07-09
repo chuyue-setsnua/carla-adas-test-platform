@@ -1,0 +1,35 @@
+# CARLA engine files (huge, do not commit)
+CarlaUE4/
+CarlaUE4.exe
+Engine/
+HDMaps/
+PythonAPI/
+Co-Simulation/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+carla_env/
+*.egg-info/
+
+# Generated reports and logs
+test_report/
+recorded_data/
+*.csv
+*.png
+*.txt
+!requirements.txt
+
+# CARLA redistributables
+vc_redist.x64.exe
+Dockerfile
+CHANGELOG
+LICENSE
+README
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
